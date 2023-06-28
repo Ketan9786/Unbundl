@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/styles.css" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>assignment2 Home page</title>
+</head>
+
+<body>
+
+
+    <!--creact your pack section-->
+
+
+
+    <div class="d-flex justify-content-center flex-wrap mt-5">
+        <h1>Create your Pack</h1>
+    </div>
+
+
+
+    <div class="main-flex">
+        <div class="card" id=card1>
+            <img src="https://cdn.shopify.com/s/files/1/0109/2327/8417/products/Websit-03_23dc35af-25f1-4f9b-9f48-6186592193fd_medium.png?v=1665723422"
+                alt="" class="">
+            <span>Jimmy's Ginger Lemon</span>
+            <div id=1> <span>Rs.60</span> <button class="btn-btn" id=1 onclick="handelClick(event)" value=1>+</button> </div>
+        </div>
+
+        <div class="card" id=card2>
+            <img src="https://cdn.shopify.com/s/files/1/0109/2327/8417/products/Website-01_5e3bae5d-52b7-4a02-8e05-a0ee9fa075b3_medium.png?v=1665723487"
+                alt="" >
+                <span>Jimmy's Ginger Ale</span>
+            <div id="2"> <span>Rs.60 </span><button class="btn-btn"onclick="handelClick(event)" id=2 value=1>+</button> </div>
+        </div>
+
+        <div class="card" id=card3>
+            <img src="https://cdn.shopify.com/s/files/1/0109/2327/8417/products/Website-03_0da6708b-5ace-4b4e-b626-e85c1e6f754b_medium.png?v=1665723063"
+                alt="" >
+                <span>Jimmy's Tonic Water</span>
+            <div id="3"> <span>Rs.60 </span> <button class="btn-btn" id=3 onclick="handelClick(event)" value=1>+</button> </div>
+        </div>
+   
+    </div>
+
+   
+    <div class="btn-div" id="addtoCart1" >
+           <button class="btn-btn" onclick="openAddtoCart()">Add to Cart</button>
+        </div>
+   
+    <div class="btn-div">
+        
+        <button class="btn-btn" ><a href="/index.html" style="text-decoration: none; color: aliceblue;">Go to Assignment 1</a></button>
+        </div>
+        <div id="alert"> </div> 
+        <div class="bill" id="bill1" style="display: none;"> 
+           
+            <div> <h3>Totol Bill : <span>Rs.200</span></h3></div>
+            <div> <span>Enjoy your Drink and Become ENERGETIC</span></div>
+            <button class="btn-btn"><a href="/assignment2/checkout/index.html" style="text-decoration: none; color: aliceblue;"> Proessed to Checkout</a></button>
+            <button class="btn-btn" onclick="closeAddtoCart()">Go back</button>
+        </div>
+        <div class="bill" id="bill2" style="display: none;"> 
+                <span> Please create your pack</span>
+            <button class="btn-btn" onclick="closeAddtoCart()">Go back</button>
+        </div>
+      
+    
+
+
+    <!--script bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+      
+            <script src="./modules/index.js"></script>
+</body>
+
+</html>
